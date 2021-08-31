@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="17">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="18"/>
+			<ChildItems>
+				<Button name="Записать" id="10">
+					<Type>UsualButton</Type>
+					<Width>13</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.Записать</CommandName>
+					<BackColor>#FFCC99</BackColor>
+					<Font height="9" bold="true" kind="AutoFont"/>
+					<ExtendedTooltip name="ЗаписатьРасширеннаяПодсказка" id="11"/>
+				</Button>
+				<Button name="ОбновитьОрганизации" id="19">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОбновитьОрганизации</CommandName>
+					<BackColor>#FFFF99</BackColor>
+					<Font bold="true" kind="AutoFont"/>
+					<ExtendedTooltip name="ОбновитьОрганизацииРасширеннаяПодсказка" id="20"/>
+				</Button>
+				<Button name="ОткрытьСписок" id="15">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОткрытьСписок</CommandName>
+					<ExtendedTooltip name="ОткрытьСписокРасширеннаяПодсказка" id="16"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Организация" id="7">
+			<DataPath>Организация</DataPath>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="АдресСервераПечати" id="21">
+			<DataPath>АдресСервераПечати</DataPath>
+			<ContextMenu name="АдресСервераПечатиКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="АдресСервераПечатиРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<InputField name="АдресПринтера" id="1">
+			<DataPath>АдресПринтера</DataPath>
+			<ContextMenu name="АдресПринтераКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="АдресПринтераРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ИмяПользователя" id="4">
+			<DataPath>ИмяПользователя</DataPath>
+			<ContextMenu name="ИмяПользователяКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ИмяПользователяРасширеннаяПодсказка" id="6"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="АдресПринтера" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес принтера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Организация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяПользователя" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресСервераПечати" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер печати</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Записать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Записать</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="ОткрытьСписок" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСписок</Action>
+		</Command>
+		<Command name="ОбновитьОрганизации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить организации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить организации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьОрганизации</Action>
+		</Command>
+	</Commands>
+</Form>

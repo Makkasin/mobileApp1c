@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Начальная страница</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа6" id="47">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="48"/>
+			<ChildItems>
+				<InputField name="Склад" id="10">
+					<DataPath>Склад</DataPath>
+					<Font bold="true" kind="AutoFont"/>
+					<ContextMenu name="СкладКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="12"/>
+					<Events>
+						<Event name="OnChange">КонстантыСкладПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="СканироватьСклад" id="49">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.СканироватьСклад</CommandName>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="СканироватьСкладРасширеннаяПодсказка" id="50"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа5" id="45">
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<HorizontalSpacing>OneAndHalf</HorizontalSpacing>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="46"/>
+			<ChildItems>
+				<UsualGroup name="Группа4" id="37">
+					<Group>Horizontal</Group>
+					<HorizontalSpacing>Half</HorizontalSpacing>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<Button name="ПроверкаШК" id="27">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>20</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>6</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ПроверкаШК</CommandName>
+							<BackColor>web:Gainsboro</BackColor>
+							<BorderColor>#FFCC00</BorderColor>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ПроверкаШКРасширеннаяПодсказка" id="28"/>
+						</Button>
+						<Button name="СменаМеста" id="54">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>20</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>6</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.СменаМеста</CommandName>
+							<BackColor>#CCFFFF</BackColor>
+							<BorderColor>#FFCC00</BorderColor>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="СменаМестаРасширеннаяПодсказка" id="55"/>
+						</Button>
+						<Button name="Пересорт" id="43">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>20</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>6</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.Пересорт</CommandName>
+							<BackColor>web:MediumGreen</BackColor>
+							<BorderColor>#FFCC00</BorderColor>
+							<ExtendedTooltip name="ПересортРасширеннаяПодсказка" id="44"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа3" id="33">
+					<Group>Horizontal</Group>
+					<HorizontalSpacing>Half</HorizontalSpacing>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<Button name="Документы" id="19">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>20</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>6</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.Документы</CommandName>
+							<BorderColor>#FFCC00</BorderColor>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ДокументыРасширеннаяПодсказка" id="20"/>
+						</Button>
+						<Button name="РасходТМЦ" id="35">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>20</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>6</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.РасходТМЦ</CommandName>
+							<BackColor>#CCFFCC</BackColor>
+							<BorderColor>#FFCC00</BorderColor>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="РасходТМЦРасширеннаяПодсказка" id="36"/>
+						</Button>
+						<Button name="ВыдачаМасла" id="41">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>20</Width>
+							<Height>6</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ВыдачаМасла</CommandName>
+							<BackColor>web:AntiqueWhite</BackColor>
+							<BorderColor>#FFCC00</BorderColor>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ВыдачаМаслаРасширеннаяПодсказка" id="42"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа2" id="29">
+					<Group>Horizontal</Group>
+					<HorizontalSpacing>Half</HorizontalSpacing>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<Button name="Номенклатура" id="8">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>20</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>6</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.Номенклатура</CommandName>
+							<BackColor>web:LightGoldenRod</BackColor>
+							<BorderColor>#FFCC00</BorderColor>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="9"/>
+						</Button>
+						<Button name="ЗагрузитьОстатки" id="6">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>20</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>6</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ЗагрузитьОстатки</CommandName>
+							<BackColor>web:Gainsboro</BackColor>
+							<BorderColor>#FFCC00</BorderColor>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ЗагрузитьОстаткиРасширеннаяПодсказка" id="7"/>
+						</Button>
+						<Button name="ПосмотретьОстатки" id="1">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<OnlyInAllActions>true</OnlyInAllActions>
+							<Width>20</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>6</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<CommandName>Form.Command.ПосмотретьОстатки</CommandName>
+							<BackColor>web:NavajoWhite</BackColor>
+							<BorderColor>#FFCC00</BorderColor>
+							<Font bold="true" kind="AutoFont"/>
+							<Picture>
+								<xr:Abs>Picture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<PictureLocation>Left</PictureLocation>
+							<ExtendedTooltip name="ПосмотретьОстаткиРасширеннаяПодсказка" id="2"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="17">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="18"/>
+			<ChildItems>
+				<Button name="Команда1" id="13">
+					<Type>UsualButton</Type>
+					<Visible>false</Visible>
+					<Height>4</Height>
+					<CommandName>Form.Command.Команда1</CommandName>
+					<BackColor>#FF6600</BackColor>
+					<ExtendedTooltip name="Команда1РасширеннаяПодсказка" id="14"/>
+				</Button>
+				<Button name="ВыгрузитьДанные" id="15">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<OnlyInAllActions>true</OnlyInAllActions>
+					<Width>20</Width>
+					<Height>4</Height>
+					<CommandName>Form.Command.ВыгрузитьДанные</CommandName>
+					<BackColor>#CCFFFF</BackColor>
+					<Font bold="true" kind="AutoFont"/>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен</v8:content>
+						</v8:item>
+					</Title>
+					<Shape>Usual</Shape>
+					<PictureLocation>Left</PictureLocation>
+					<ExtendedTooltip name="ВыгрузитьДанныеРасширеннаяПодсказка" id="16"/>
+				</Button>
+				<Button name="СписокТС" id="39">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<Width>20</Width>
+					<Height>4</Height>
+					<CommandName>Form.Command.СписокТС</CommandName>
+					<BackColor>#FFFF99</BackColor>
+					<Font bold="true" kind="AutoFont"/>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="СписокТСРасширеннаяПодсказка" id="40"/>
+				</Button>
+				<Button name="ЗапросыНаВыдачуТМЦ" id="58">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<Width>20</Width>
+					<Height>4</Height>
+					<CommandName>Form.Command.ЗапросыНаВыдачуТМЦ</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.QueryWizardShowChangesTables</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ЗапросыНаВыдачуТМЦРасширеннаяПодсказка" id="59"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа7" id="56">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="57"/>
+			<ChildItems>
+				<Button name="СогласованиеВыдачаТМЦ" id="60">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<Width>20</Width>
+					<Height>4</Height>
+					<CommandName>Form.Command.СогласованиеВыдачаТМЦ</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.ExternalDataSource</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="СогласованиеВыдачаТМЦРасширеннаяПодсказка" id="61"/>
+				</Button>
+				<Button name="ЗапросыНаНовуюНоменклатуру" id="31">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<Width>20</Width>
+					<Height>4</Height>
+					<CommandName>Form.Command.ЗапросыНаНовуюНоменклатуру</CommandName>
+					<Font bold="true" kind="AutoFont"/>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ЗапросыНаНовуюНоменклатуруРасширеннаяПодсказка" id="32"/>
+				</Button>
+				<Button name="СканироватьQRСправки" id="62">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<Width>20</Width>
+					<Height>4</Height>
+					<CommandName>Form.Command.СканироватьQRСправки</CommandName>
+					<Font bold="true" kind="AutoFont"/>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="СканироватьQRСправкиРасширеннаяПодсказка" id="63"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Декорация2" id="64">
+			<Width>60</Width>
+			<TextColor>#800000</TextColor>
+			<Font bold="true" kind="AutoFont"/>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="65"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="66"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация1" id="51">
+			<Width>55</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<TextColor>style:FieldSelectionBackColor</TextColor>
+			<Font height="12" bold="true" kind="AutoFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Телефон тех.поддержки :  8 (3466) 311-089</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="52"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="53"/>
+		</LabelDecoration>
+		<Button name="PUSH" id="25">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.PUSH</CommandName>
+			<ExtendedTooltip name="PUSHРасширеннаяПодсказка" id="26"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Старт</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Склад" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПосмотретьОстатки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Посмотреть остатки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Посмотреть остатки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПосмотретьОстатки</Action>
+		</Command>
+		<Command name="ЗагрузитьОстатки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить остатки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить остатки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьОстатки</Action>
+		</Command>
+		<Command name="Номенклатура" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Номенклатура</Action>
+		</Command>
+		<Command name="Команда1" id="4">
+			<Action>Команда1</Action>
+		</Command>
+		<Command name="ВыгрузитьДанные" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьДанные</Action>
+		</Command>
+		<Command name="Документы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Документы</Action>
+		</Command>
+		<Command name="СменаАдресаСервера" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Смена адреса сервера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Смена адреса сервера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СменаАдресаСервера</Action>
+		</Command>
+		<Command name="PUSH" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>PUSH</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>PUSH</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>PUSH</Action>
+		</Command>
+		<Command name="ПроверкаШК" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка штрих-кода</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка ШК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверкаШК</Action>
+		</Command>
+		<Command name="ЗапросыНаНовуюНоменклатуру" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запросы на ном-ру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запросы на новую номенклатуру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапросыНаНовуюНоменклатуру</Action>
+		</Command>
+		<Command name="РасходТМЦ" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расход ТМЦ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расход ТМЦ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РасходТМЦ</Action>
+		</Command>
+		<Command name="СписокТС" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список ТС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список ТС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СписокТС</Action>
+		</Command>
+		<Command name="ВыдачаМасла" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выдача масла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выдача масла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыдачаМасла</Action>
+		</Command>
+		<Command name="Пересорт" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пересорт</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пересорт</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ОбщаяКартинка2</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Пересорт</Action>
+		</Command>
+		<Command name="СканироватьСклад" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сканировать склад</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сканировать склад</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СканироватьСклад</Action>
+		</Command>
+		<Command name="СменаМеста" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Смена места</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Смена места</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СменаМеста</Action>
+		</Command>
+		<Command name="ЗапросыНаВыдачуТМЦ" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запросы на выдачу ТМЦ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запросы на выдачу ТМЦ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапросыНаВыдачуТМЦ</Action>
+		</Command>
+		<Command name="СогласованиеВыдачаТМЦ" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Согласование выдача ТМЦ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Согласование выдача ТМЦ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СогласованиеВыдачаТМЦ</Action>
+		</Command>
+		<Command name="ОбновитьНастройки" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьНастройки</Action>
+		</Command>
+		<Command name="СканироватьQRСправки" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>QR Справки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сканировать QRСправки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СканироватьQRСправки</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandSet>
+		<ExcludedCommand>Delete</ExcludedCommand>
+	</CommandSet>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПечатьЭтикеткиСУказаниемПринтера" id="33">
+				<Type>CommandBarButton</Type>
+				<OnlyInAllActions>false</OnlyInAllActions>
+				<CommandName>Form.Command.ПечатьЭтикеткиСУказаниемПринтера</CommandName>
+				<ExtendedTooltip name="ФормаПечатьЭтикеткиСУказаниемПринтераРасширеннаяПодсказка" id="34"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="31">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<Button name="ФормаЗаписатьОнЛайн" id="27">
+					<Type>UsualButton</Type>
+					<Visible>false</Visible>
+					<Height>2</Height>
+					<CommandName>Form.Command.ЗаписатьОнЛайн</CommandName>
+					<BackColor>#FFCC99</BackColor>
+					<Font bold="true" kind="AutoFont"/>
+					<ExtendedTooltip name="ФормаЗаписатьОнЛайнРасширеннаяПодсказка" id="28"/>
+				</Button>
+				<Button name="ПечатьЭтикетки" id="29">
+					<Type>UsualButton</Type>
+					<Height>2</Height>
+					<CommandName>Form.Command.ПечатьЭтикетки</CommandName>
+					<Font bold="true" kind="AutoFont"/>
+					<ExtendedTooltip name="ПечатьЭтикеткиРасширеннаяПодсказка" id="30"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<LabelField name="Код" id="35">
+			<DataPath>Объект.Code</DataPath>
+			<ContextMenu name="КодКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="37"/>
+		</LabelField>
+		<InputField name="Родитель" id="15">
+			<DataPath>Объект.Parent</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="РодительКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="17"/>
+		</InputField>
+		<InputField name="Артикул" id="7">
+			<DataPath>Объект.Артикул</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="АртикулКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="АртикулРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ЕдИзм" id="10">
+			<DataPath>Объект.ЕдИзм</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<DropListButton>true</DropListButton>
+			<ChoiceButton>true</ChoiceButton>
+			<ChooseType>false</ChooseType>
+			<TextEdit>false</TextEdit>
+			<ContextMenu name="ЕдИзмКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ЕдИзмРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<LabelField name="ДатаСинхронизации" id="18">
+			<DataPath>Объект.ДатаСинхронизации</DataPath>
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
+			<ContextMenu name="ДатаСинхронизацииКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="ДатаСинхронизацииРасширеннаяПодсказка" id="20"/>
+		</LabelField>
+		<LabelField name="ДатаИзменения" id="21">
+			<DataPath>Объект.ДатаИзменения</DataPath>
+			<Visible>false</Visible>
+			<Enabled>false</Enabled>
+			<ContextMenu name="ДатаИзмененияКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ДатаИзмененияРасширеннаяПодсказка" id="23"/>
+		</LabelField>
+		<LabelField name="ИнфоВыгрузки" id="24">
+			<DataPath>Объект.ИнфоВыгрузки</DataPath>
+			<ContextMenu name="ИнфоВыгрузкиКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="ИнфоВыгрузкиРасширеннаяПодсказка" id="26"/>
+		</LabelField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Номенклатура</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаписатьОнЛайн" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать Online</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать он лайн</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьОнЛайн</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="ПечатьЭтикетки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать этикетки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать этикетки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьЭтикетки</Action>
+		</Command>
+		<Command name="ПечатьЭтикеткиСУказаниемПринтера" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать этикетки с указанием принтера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать этикетки с указанием принтера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьЭтикетки</Action>
+		</Command>
+	</Commands>
+</Form>

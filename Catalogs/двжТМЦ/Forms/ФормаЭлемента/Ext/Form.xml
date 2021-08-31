@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ВесУтиль" id="55">
+			<DataPath>Объект.ВесУтиль</DataPath>
+			<BackColor>#CCFFCC</BackColor>
+			<Font bold="true" kind="AutoFont"/>
+			<ContextMenu name="ВесУтильКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="ВесУтильРасширеннаяПодсказка" id="57"/>
+		</InputField>
+		<LabelField name="Дата" id="1">
+			<DataPath>Объект.Дата</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="3"/>
+		</LabelField>
+		<InputField name="Склад" id="4">
+			<DataPath>Объект.Склад</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СкладКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Номенклатура" id="10">
+			<DataPath>Объект.Номенклатура</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НоменклатураКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ДокументОснование" id="50">
+			<DataPath>Объект.ДокументОснование</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="51"/>
+			<ExtendedTooltip name="ДокументОснованиеРасширеннаяПодсказка" id="52"/>
+		</InputField>
+		<InputField name="Количество" id="16">
+			<DataPath>Объект.Количество</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КоличествоКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КоличествоРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<UsualGroup name="Группа4" id="53">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="54"/>
+			<ChildItems>
+				<InputField name="Место" id="7">
+					<DataPath>Объект.Место</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МестоКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="МестоРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="ШтрихКод" id="13">
+					<DataPath>Объект.ШтрихКод</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ШтрихКодКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ШтрихКодРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="42">
+			<ReadOnly>true</ReadOnly>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<InputField name="ТабНомер" id="44">
+					<DataPath>Объект.ТабНомер</DataPath>
+					<ContextMenu name="ТабНомерКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТабНомерРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="Сотрудник" id="47">
+					<DataPath>Объект.Сотрудник</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="СотрудникКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="49"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="40">
+			<ReadOnly>true</ReadOnly>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<InputField name="ГарНомер" id="37">
+					<DataPath>Объект.ГарНомер</DataPath>
+					<ContextMenu name="ГарНомерКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ГарНомерРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="ТС" id="34">
+					<DataPath>Объект.ТС</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="ТСКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ТСРасширеннаяПодсказка" id="36"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="29">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<Button name="Сделатьсторно" id="25">
+					<Type>UsualButton</Type>
+					<Width>20</Width>
+					<Height>2</Height>
+					<CommandName>Form.Command.Сделатьсторно</CommandName>
+					<TextColor>style:SpecialTextColor</TextColor>
+					<BorderColor>#FF0000</BorderColor>
+					<Font height="10" kind="AutoFont"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сделать сторно</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СделатьсторноРасширеннаяПодсказка" id="26"/>
+				</Button>
+				<Button name="Сторно" id="27">
+					<Type>UsualButton</Type>
+					<Visible>false</Visible>
+					<Width>26</Width>
+					<Height>2</Height>
+					<CommandName>Form.Command.Сторно</CommandName>
+					<TextColor>#000000</TextColor>
+					<BackColor>style:SpecialTextColor</BackColor>
+					<Font height="10" bold="true" kind="AutoFont"/>
+					<ExtendedTooltip name="СторноРасширеннаяПодсказка" id="28"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<LabelField name="Лог" id="19">
+			<DataPath>Объект.Лог</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЛогКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ЛогРасширеннаяПодсказка" id="21"/>
+		</LabelField>
+		<LabelField name="ДатаСинхронизации" id="22">
+			<DataPath>Объект.ДатаСинхронизации</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаСинхронизацииКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ДатаСинхронизацииРасширеннаяПодсказка" id="24"/>
+		</LabelField>
+		<LabelField name="ИнфоВыгрузки" id="31">
+			<DataPath>Объект.ИнфоВыгрузки</DataPath>
+			<ContextMenu name="ИнфоВыгрузкиКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ИнфоВыгрузкиРасширеннаяПодсказка" id="33"/>
+		</LabelField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.двжТМЦ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сторно" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сторно</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сторно</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сторно</Action>
+		</Command>
+		<Command name="Сделатьсторно" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделатьсторно</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделатьсторно</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сделатьсторно</Action>
+		</Command>
+	</Commands>
+</Form>
