@@ -407,8 +407,8 @@
 			<Metadata name="InformationRegister.Остатки.Dimension.ШтрихКод" id="df5d3469-1041-4ed4-a76c-d5e1df63896d"/>
 			<Metadata name="InformationRegister.Остатки.Resource.НачОст" id="fa534d0f-23e3-42f3-b3d8-030722647816"/>
 		</Metadata>
-		<Metadata name="InformationRegister.Остатки.Form.ФормаСписка" id="16bce92e-cea5-4f69-bfac-daf9e9b3f319" configVersion="84b54d0392b26e44a5a860b61a39d11c00000000"/>
-		<Metadata name="InformationRegister.Остатки.Form.ФормаСписка.Form" id="16bce92e-cea5-4f69-bfac-daf9e9b3f319.0" configVersion="93d742668c37d442b85e1f2446080b8200000000"/>
+		<Metadata name="InformationRegister.Остатки.Form.ФормаСписка" id="16bce92e-cea5-4f69-bfac-daf9e9b3f319" configVersion="2c1fdbdf8b1f684e996dfcbc5f1a877600000000"/>
+		<Metadata name="InformationRegister.Остатки.Form.ФормаСписка.Form" id="16bce92e-cea5-4f69-bfac-daf9e9b3f319.0" configVersion="c184d5f8c3e61546b1bda359b355ebcd00000000"/>
 		<Metadata name="InformationRegister.Остатки.Form.ФормаСписка.Help" id="16bce92e-cea5-4f69-bfac-daf9e9b3f319.1" configVersion="f720f2ce0d3d6d499babb7fc7dad9b8100000000"/>
 		<Metadata name="InformationRegister.Остатки.Form.ФормаСписка1" id="31a02378-1445-4734-b7e3-54956365cc89" configVersion="40c004674437df40a3d65839c6b291dc00000000"/>
 		<Metadata name="InformationRegister.Остатки.Form.ФормаСписка1.Form" id="31a02378-1445-4734-b7e3-54956365cc89.0" configVersion="5d6ecd70ef0d974caa00b598ece7bbb600000000"/>
