@@ -253,8 +253,8 @@
 		<Metadata name="DataProcessor.Инвентаризация" id="25702ea1-d5e3-4576-93ee-ec7b10daef5a" configVersion="3a73312929952844ad6c992b3b02798000000000">
 			<Metadata name="DataProcessor.Инвентаризация.Attribute.Склад" id="6d91ee29-1cba-453e-bc57-cff436efcb01"/>
 		</Metadata>
-		<Metadata name="DataProcessor.Инвентаризация.Form.Форма" id="cb1a3938-720a-408b-9237-bb12a9ca731f" configVersion="9d93731d21250447a86109134db30fa300000000"/>
-		<Metadata name="DataProcessor.Инвентаризация.Form.Форма.Form" id="cb1a3938-720a-408b-9237-bb12a9ca731f.0" configVersion="26eb202ef108464584ee543963ff5d6200000000"/>
+		<Metadata name="DataProcessor.Инвентаризация.Form.Форма" id="cb1a3938-720a-408b-9237-bb12a9ca731f" configVersion="e093cbf5d237f14fb916026da58b7a1300000000"/>
+		<Metadata name="DataProcessor.Инвентаризация.Form.Форма.Form" id="cb1a3938-720a-408b-9237-bb12a9ca731f.0" configVersion="2a3e0bfcc7044142b4f80f4b06daf6ea00000000"/>
 		<Metadata name="DataProcessor.Инвентаризация.Form.ФормаСверки" id="88bcdbe7-bba6-4ddf-a6bd-f7549c3811fc" configVersion="1f4dfa0d8511d148a16e024f21d4c93800000000"/>
 		<Metadata name="DataProcessor.Инвентаризация.Form.ФормаСверки.Form" id="88bcdbe7-bba6-4ddf-a6bd-f7549c3811fc.0" configVersion="e7f2b488ce2adf409f00085b0a1a86fb00000000"/>
 		<Metadata name="DataProcessor.Инвентаризация.Form.ФормаСверки.Help" id="88bcdbe7-bba6-4ddf-a6bd-f7549c3811fc.1" configVersion="e9f09b70f05aac4490a518a9cca0668600000000"/>
