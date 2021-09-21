@@ -107,6 +107,7 @@
 			<CommandBarLocation>None</CommandBarLocation>
 			<ReadOnly>true</ReadOnly>
 			<ChangeRowSet>false</ChangeRowSet>
+			<MultipleChoice>true</MultipleChoice>
 			<SelectionMode>SingleRow</SelectionMode>
 			<Header>false</Header>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
