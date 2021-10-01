@@ -11,23 +11,22 @@
 	<CommandBarLocation>Top</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
-			<Button name="ФормаДвижение" id="105">
-				<Type>CommandBarButton</Type>
-				<OnlyInAllActions>true</OnlyInAllActions>
-				<CommandName>Form.Command.Движение</CommandName>
-				<ExtendedTooltip name="ФормаДвижениеРасширеннаяПодсказка" id="106"/>
-			</Button>
 			<Button name="ПечатьВсехЭтикеток" id="49">
 				<Type>CommandBarButton</Type>
 				<OnlyInAllActions>false</OnlyInAllActions>
 				<CommandName>Form.Command.ПечатьВсехЭтикеток</CommandName>
 				<ExtendedTooltip name="ПечатьВсехЭтикетокРасширеннаяПодсказка" id="50"/>
 			</Button>
-			<Button name="ФормаПечатьЭтикетки1" id="51">
+			<Button name="ДобавитьДляПечати" id="121">
 				<Type>CommandBarButton</Type>
-				<OnlyInAllActions>true</OnlyInAllActions>
-				<CommandName>Form.Command.ПечатьЭтикетки1</CommandName>
-				<ExtendedTooltip name="ФормаПечатьЭтикетки1РасширеннаяПодсказка" id="52"/>
+				<Width>13</Width>
+				<CommandName>Form.Command.ДобавитьДляПечати</CommandName>
+				<ExtendedTooltip name="ДобавитьДляПечатиРасширеннаяПодсказка" id="122"/>
+			</Button>
+			<Button name="ФормаСписокПечатиЭтикеток" id="123">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СписокПечатиЭтикеток</CommandName>
+				<ExtendedTooltip name="ФормаСписокПечатиЭтикетокРасширеннаяПодсказка" id="124"/>
 			</Button>
 			<Button name="ФормаОткрытьРегистр" id="119">
 				<Type>CommandBarButton</Type>
@@ -101,6 +100,20 @@
 						<Event name="OnChange">СкладПриИзменении</Event>
 					</Events>
 				</RadioButtonField>
+				<Button name="ФормаПечатьЭтикетки1" id="51">
+					<Type>UsualButton</Type>
+					<OnlyInAllActions>true</OnlyInAllActions>
+					<Width>9</Width>
+					<CommandName>Form.Command.ПечатьЭтикетки1</CommandName>
+					<ExtendedTooltip name="ФормаПечатьЭтикетки1РасширеннаяПодсказка" id="52"/>
+				</Button>
+				<Button name="ФормаДвижение" id="105">
+					<Type>UsualButton</Type>
+					<OnlyInAllActions>true</OnlyInAllActions>
+					<Width>9</Width>
+					<CommandName>Form.Command.Движение</CommandName>
+					<ExtendedTooltip name="ФормаДвижениеРасширеннаяПодсказка" id="106"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
 		<Table name="Список" id="53">
@@ -466,6 +479,36 @@ ORDER BY СпрНом.наименование
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьРегистр</Action>
+		</Command>
+		<Command name="ДобавитьДляПечати" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить для печати этикетки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить для печати</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьДляПечати</Action>
+		</Command>
+		<Command name="СписокПечатиЭтикеток" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список печати этикеток</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список печати этикеток</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СписокПечатиЭтикеток</Action>
 		</Command>
 	</Commands>
 </Form>

@@ -166,6 +166,7 @@
 			<Catalog>ДеталиОборудования</Catalog>
 			<Catalog>ро_Оборудование</Catalog>
 			<Document>НакладнаяРасходная</Document>
+			<Document>ро_Отгрузка</Document>
 			<Enum>РолиДоступа</Enum>
 			<Enum>НаименованиеНастройки</Enum>
 			<Enum>ВидДокумента</Enum>
@@ -188,6 +189,8 @@
 			<InformationRegister>НастройкиСистемы</InformationRegister>
 			<InformationRegister>СинхроДвж</InformationRegister>
 			<InformationRegister>НормыМасло</InformationRegister>
+			<InformationRegister>ОстаткиОборудования</InformationRegister>
+			<InformationRegister>НоменклатураДляПечати</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

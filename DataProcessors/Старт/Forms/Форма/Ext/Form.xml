@@ -280,6 +280,12 @@
 						<xr:Abs>Picture.png</xr:Abs>
 						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оборудование</v8:content>
+						</v8:item>
+					</Title>
 					<ExtendedTooltip name="СписокТСРасширеннаяПодсказка" id="40"/>
 				</Button>
 				<Button name="ЗапросыНаВыдачуТМЦ" id="58">
