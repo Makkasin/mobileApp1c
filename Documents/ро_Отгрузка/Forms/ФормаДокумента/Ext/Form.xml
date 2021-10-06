@@ -23,8 +23,23 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="40"/>
 			<ChildItems>
+				<LabelField name="ВидДокумента" id="44">
+					<DataPath>Объект.ВидДокумента</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>19</Width>
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Font ref="style:NormalTextFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="ВидДокументаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ВидДокументаРасширеннаяПодсказка" id="46"/>
+				</LabelField>
 				<InputField name="Номер" id="1">
 					<DataPath>Объект.Number</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№</v8:content>
+						</v8:item>
+					</Title>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
