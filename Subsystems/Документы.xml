@@ -18,6 +18,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.НакладнаяРасходная</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СделатьПодпись</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗаявкиНаВыдачуТМЦ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВыдачаТМЦ</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

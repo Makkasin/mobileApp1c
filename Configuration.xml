@@ -151,7 +151,6 @@
 			<Constant>ДоступСогласованиеВыдачиТМЦ</Constant>
 			<Constant>ДоступДвиженияПоСкладу</Constant>
 			<Constant>ДоступВыдачаТМЦнаТС</Constant>
-			<Constant>ИмяУстройства</Constant>
 			<CommonForm>ПрогрессБар</CommonForm>
 			<Catalog>Номенклатура</Catalog>
 			<Catalog>Склады</Catalog>
@@ -165,8 +164,10 @@
 			<Catalog>Дефекты</Catalog>
 			<Catalog>ДеталиОборудования</Catalog>
 			<Catalog>ро_Оборудование</Catalog>
+			<Catalog>инвИнвентаризацияОС</Catalog>
 			<Document>НакладнаяРасходная</Document>
 			<Document>ро_Отгрузка</Document>
+			<Document>ВыдачаТМЦ</Document>
 			<Enum>РолиДоступа</Enum>
 			<Enum>НаименованиеНастройки</Enum>
 			<Enum>ВидДокумента</Enum>
@@ -191,6 +192,7 @@
 			<InformationRegister>НормыМасло</InformationRegister>
 			<InformationRegister>ОстаткиОборудования</InformationRegister>
 			<InformationRegister>НоменклатураДляПечати</InformationRegister>
+			<InformationRegister>ОстаткиОС</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

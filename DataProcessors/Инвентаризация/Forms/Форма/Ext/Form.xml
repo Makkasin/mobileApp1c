@@ -75,16 +75,31 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Номенклатура" id="53">
-			<DataPath>инвНоменклатура.Номенклатура</DataPath>
-			<SkipOnInput>true</SkipOnInput>
-			<TitleLocation>None</TitleLocation>
-			<MultiLine>true</MultiLine>
-			<BackColor>#FFFF99</BackColor>
-			<Font height="10" kind="AutoFont"/>
-			<ContextMenu name="НоменклатураКонтекстноеМеню" id="54"/>
-			<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="55"/>
-		</InputField>
+		<UsualGroup name="Группа4" id="166">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="167"/>
+			<ChildItems>
+				<InputField name="Номенклатура" id="53">
+					<DataPath>инвНоменклатура.Номенклатура</DataPath>
+					<SkipOnInput>true</SkipOnInput>
+					<TitleLocation>None</TitleLocation>
+					<MultiLine>true</MultiLine>
+					<BackColor>#FFFF99</BackColor>
+					<Font height="10" kind="AutoFont"/>
+					<ContextMenu name="НоменклатураКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<LabelField name="инвИнвентаризацияНоменклатураЕдИзм" id="163">
+					<DataPath>Items.инвИнвентаризация.CurrentData.Номенклатура.ЕдИзм</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>4</Width>
+					<Height>2</Height>
+					<ContextMenu name="инвИнвентаризацияНоменклатураЕдИзмКонтекстноеМеню" id="164"/>
+					<ExtendedTooltip name="инвИнвентаризацияНоменклатураЕдИзмРасширеннаяПодсказка" id="165"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="Группа1" id="59">
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
@@ -137,6 +152,18 @@
 					</Title>
 					<ExtendedTooltip name="КолМинусРасширеннаяПодсказка" id="62"/>
 				</Button>
+				<LabelField name="Забаланс1" id="173">
+					<DataPath>Забаланс</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЛ=Баланс; БИ=Забаланс</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="Забаланс1КонтекстноеМеню" id="174"/>
+					<ExtendedTooltip name="Забаланс1РасширеннаяПодсказка" id="175"/>
+				</LabelField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа3" id="86">
@@ -535,6 +562,29 @@
 						</Table>
 					</ChildItems>
 				</Page>
+				<Page name="стНастройка" id="168">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ст настройка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="стНастройкаРасширеннаяПодсказка" id="169"/>
+					<ChildItems>
+						<CheckBoxField name="Забаланс" id="170">
+							<DataPath>Забаланс</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЗабалансКонтекстноеМеню" id="171"/>
+							<ExtendedTooltip name="ЗабалансРасширеннаяПодсказка" id="172"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 	</ChildItems>
@@ -806,6 +856,17 @@
 					</Type>
 				</Column>
 			</Columns>
+		</Attribute>
+		<Attribute name="Забаланс" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Забаланс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>

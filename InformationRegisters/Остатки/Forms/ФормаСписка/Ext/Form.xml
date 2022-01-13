@@ -28,6 +28,13 @@
 				<CommandName>Form.Command.СписокПечатиЭтикеток</CommandName>
 				<ExtendedTooltip name="ФормаСписокПечатиЭтикетокРасширеннаяПодсказка" id="124"/>
 			</Button>
+			<Button name="ФормаДвижение" id="105">
+				<Type>CommandBarButton</Type>
+				<OnlyInAllActions>true</OnlyInAllActions>
+				<Width>9</Width>
+				<CommandName>Form.Command.Движение</CommandName>
+				<ExtendedTooltip name="ФормаДвижениеРасширеннаяПодсказка" id="106"/>
+			</Button>
 			<Button name="ФормаОткрытьРегистр" id="119">
 				<Type>CommandBarButton</Type>
 				<OnlyInAllActions>false</OnlyInAllActions>
@@ -107,13 +114,15 @@
 					<CommandName>Form.Command.ПечатьЭтикетки1</CommandName>
 					<ExtendedTooltip name="ФормаПечатьЭтикетки1РасширеннаяПодсказка" id="52"/>
 				</Button>
-				<Button name="ФормаДвижение" id="105">
-					<Type>UsualButton</Type>
-					<OnlyInAllActions>true</OnlyInAllActions>
-					<Width>9</Width>
-					<CommandName>Form.Command.Движение</CommandName>
-					<ExtendedTooltip name="ФормаДвижениеРасширеннаяПодсказка" id="106"/>
-				</Button>
+				<CheckBoxField name="Забаланс" id="125">
+					<DataPath>Забаланс</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗабалансКонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="ЗабалансРасширеннаяПодсказка" id="127"/>
+					<Events>
+						<Event name="OnChange">СкладПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
 		<Table name="Список" id="53">
@@ -288,6 +297,7 @@ FROM
 	РегистрСведений.Остатки КАК Остатки
 ГДЕ
 	Остатки.Склад = &amp;Склад
+  и Остатки.Забаланс = &amp;Забаланс
 	
 UNION ALL
 
@@ -376,6 +386,17 @@ ORDER BY СпрНом.наименование
 				<v8:DateQualifiers>
 					<v8:DateFractions>Date</v8:DateFractions>
 				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Забаланс" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Забаланс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>

@@ -24,10 +24,12 @@
 			<ExtendedTooltip name="ВидКодРасширеннаяПодсказка" id="15"/>
 		</LabelDecoration>
 		<UsualGroup name="Группа1" id="18">
+			<Group>Vertical</Group>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="19"/>
 			<ChildItems>
 				<InputField name="Стеллаж" id="1">
 					<DataPath>Стеллаж</DataPath>
+					<BackColor>#CCFFCC</BackColor>
 					<Font height="10" kind="AutoFont"/>
 					<ContextMenu name="СтеллажКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="СтеллажРасширеннаяПодсказка" id="3"/>
@@ -37,6 +39,7 @@
 				</InputField>
 				<InputField name="Линия" id="4">
 					<DataPath>Линия</DataPath>
+					<BackColor>#CCFFCC</BackColor>
 					<Font height="10" kind="AutoFont"/>
 					<ContextMenu name="ЛинияКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="ЛинияРасширеннаяПодсказка" id="6"/>
@@ -52,6 +55,7 @@
 			<ChildItems>
 				<InputField name="Ряд" id="7">
 					<DataPath>Ряд</DataPath>
+					<BackColor>#CCFFCC</BackColor>
 					<Font height="10" kind="AutoFont"/>
 					<ContextMenu name="РядКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="РядРасширеннаяПодсказка" id="9"/>
@@ -61,6 +65,7 @@
 				</InputField>
 				<InputField name="Полка" id="10">
 					<DataPath>Полка</DataPath>
+					<BackColor>#CCFFCC</BackColor>
 					<Font height="10" kind="AutoFont"/>
 					<ContextMenu name="ПолкаКонтекстноеМеню" id="11"/>
 					<ExtendedTooltip name="ПолкаРасширеннаяПодсказка" id="12"/>
@@ -93,7 +98,12 @@
 						</v8:item>
 					</Title>
 					<TitleLocation>Left</TitleLocation>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
 					<Height>2</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<MaxHeight>2</MaxHeight>
+					<VerticalStretch>false</VerticalStretch>
+					<BackColor>#CCFFCC</BackColor>
 					<ContextMenu name="МестоКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="МестоРасширеннаяПодсказка" id="24"/>
 				</InputField>
@@ -193,12 +203,11 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>10</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Any</v8:AllowedSign>
-				</v8:NumberQualifiers>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>12</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>

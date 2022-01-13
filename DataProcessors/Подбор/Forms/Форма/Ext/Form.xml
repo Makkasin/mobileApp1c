@@ -145,6 +145,7 @@ FROM
 	РегистрСведений.Остатки КАК Остатки
 ГДЕ
 	Остатки.Склад = &amp;Склад
+	и Забаланс = Ложь
 	
 UNION ALL
 
@@ -168,10 +169,10 @@ INNER JOIN Справочник.Номенклатура СпрНом ON Спр�
 	Остатки.Место
 	
 HAVING  СУММА(Остатки.Количество)&gt;0</QueryText>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
-						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemField">

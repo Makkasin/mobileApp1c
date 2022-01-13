@@ -62,6 +62,26 @@
 					<CommandName>Form.Command.ПечатьЭтикетки</CommandName>
 					<ExtendedTooltip name="ФормаПечатьЭтикеткиРасширеннаяПодсказка" id="32"/>
 				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПечатьСписок" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа печать список</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа печать список</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПечатьСписокРасширеннаяПодсказка" id="44"/>
+			<ChildItems>
 				<Button name="ДобавитьДляПечати" id="39">
 					<Type>UsualButton</Type>
 					<CommandName>Form.Command.ДобавитьДляПечати</CommandName>
@@ -335,6 +355,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СписокПечатиЭтикеток</Action>
+		</Command>
+		<Command name="СделатьФото" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать фото</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать фото</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СделатьФото</Action>
 		</Command>
 	</Commands>
 </Form>

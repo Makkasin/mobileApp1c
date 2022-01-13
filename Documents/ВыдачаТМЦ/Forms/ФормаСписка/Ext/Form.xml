@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВыгрузить" id="56">
+				<Type>CommandBarButton</Type>
+				<OnlyInAllActions>false</OnlyInAllActions>
+				<CommandName>Form.Command.Выгрузить</CommandName>
+				<ExtendedTooltip name="ФормаВыгрузитьРасширеннаяПодсказка" id="57"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа4" id="42">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>#C0C0C0</BackColor>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<Button name="ДатаНазад" id="46">
+					<Type>UsualButton</Type>
+					<Representation>Text</Representation>
+					<Width>8</Width>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<CommandName>Form.Command.ДатаНазад</CommandName>
+					<BackColor>web:Gainsboro</BackColor>
+					<Font bold="true" kind="AutoFont"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ДатаНазадРасширеннаяПодсказка" id="47"/>
+				</Button>
+				<InputField name="ДатаСписка" id="37">
+					<DataPath>ДатаСписка</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="ДатаСпискаКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ДатаСпискаРасширеннаяПодсказка" id="39"/>
+					<Events>
+						<Event name="OnChange">ДатаСпискаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="ДатаВперед" id="44">
+					<Type>UsualButton</Type>
+					<Representation>Text</Representation>
+					<Width>8</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<CommandName>Form.Command.ДатаВперед</CommandName>
+					<BackColor>web:Gainsboro</BackColor>
+					<Font bold="true" kind="AutoFont"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&gt;</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ДатаВпередРасширеннаяПодсказка" id="45"/>
+				</Button>
+				<UsualGroup name="Группа5" id="48">
+					<HorizontalStretch>true</HorizontalStretch>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Group>Horizontal</Group>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<Button name="ФормаНайтиНоменклатуру" id="58">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<OnlyInAllActions>true</OnlyInAllActions>
+							<Width>5</Width>
+							<CommandName>Form.Command.НайтиНоменклатуру</CommandName>
+							<BackColor>web:Gainsboro</BackColor>
+							<Picture>
+								<xr:Ref>StdPicture.SyncContents</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ФормаНайтиНоменклатуруРасширеннаяПодсказка" id="59"/>
+						</Button>
+						<Button name="ЗакрытьДень" id="50">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗакрытьДень</CommandName>
+							<BackColor>web:Gainsboro</BackColor>
+							<ExtendedTooltip name="ЗакрытьДеньРасширеннаяПодсказка" id="51"/>
+						</Button>
+						<Button name="ВесьПериод" id="40">
+							<Type>UsualButton</Type>
+							<OnlyInAllActions>false</OnlyInAllActions>
+							<Width>4</Width>
+							<CommandName>Form.Command.ВесьПериод</CommandName>
+							<BackColor>web:Gainsboro</BackColor>
+							<ExtendedTooltip name="ВесьПериодРасширеннаяПодсказка" id="41"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<InputField name="ПоискНоменклатура" id="60">
+			<DataPath>ПоискНоменклатура</DataPath>
+			<Visible>false</Visible>
+			<ClearButton>true</ClearButton>
+			<OpenButton>false</OpenButton>
+			<BackColor>#CCFFCC</BackColor>
+			<ContextMenu name="ПоискНоменклатураКонтекстноеМеню" id="61"/>
+			<ExtendedTooltip name="ПоискНоменклатураРасширеннаяПодсказка" id="62"/>
+			<Events>
+				<Event name="OnChange">ПоискНоменклатураПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<Header>false</Header>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<ColumnGroup name="Группа8" id="68">
+					<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="69"/>
+					<ChildItems>
+						<ColumnGroup name="Группа2" id="33">
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="34"/>
+							<ChildItems>
+								<ColumnGroup name="Группа3" id="35">
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="36"/>
+									<ChildItems>
+										<LabelField name="Дата" id="16">
+											<DataPath>Список.Date</DataPath>
+											<DefaultItem>true</DefaultItem>
+											<Width>18</Width>
+											<Height>1</Height>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДЛФ=T</v8:content>
+												</v8:item>
+											</Format>
+											<ContextMenu name="ДатаКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="18"/>
+										</LabelField>
+										<InputField name="ГарНомер" id="19">
+											<DataPath>Список.ГарНомер</DataPath>
+											<Width>18</Width>
+											<ContextMenu name="ГарНомерКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="ГарНомерРасширеннаяПодсказка" id="21"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="Группа1" id="31">
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="32"/>
+									<ChildItems>
+										<LabelField name="Сотрудник" id="25">
+											<DataPath>Список.Сотрудник</DataPath>
+											<Font height="9" bold="true" kind="AutoFont"/>
+											<ContextMenu name="СотрудникКонтекстноеМеню" id="26"/>
+											<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="27"/>
+										</LabelField>
+										<LabelField name="ТС" id="22">
+											<DataPath>Список.ТС</DataPath>
+											<ContextMenu name="ТСКонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="ТСРасширеннаяПодсказка" id="24"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="Группа7" id="66">
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="67"/>
+							<ChildItems>
+								<LabelField name="Дата1" id="63">
+									<DataPath>Список.Date</DataPath>
+									<Visible>false</Visible>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=dd.MM.yy</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="Дата1КонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="Дата1РасширеннаяПодсказка" id="65"/>
+								</LabelField>
+								<InputField name="СтрИнфо" id="28">
+									<DataPath>Список.СтрИнфо</DataPath>
+									<TextColor>#808080</TextColor>
+									<ContextMenu name="СтрИнфоКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="СтрИнфоРасширеннаяПодсказка" id="30"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="Группа6" id="52">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>web:Gainsboro</BackColor>
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="53"/>
+			<ChildItems>
+				<Button name="СканироватьДокумент" id="54">
+					<Type>UsualButton</Type>
+					<Height>2</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<CommandName>Form.Command.СканироватьДокумент</CommandName>
+					<BackColor>web:Gainsboro</BackColor>
+					<Font bold="true" kind="AutoFont"/>
+					<ExtendedTooltip name="СканироватьДокументРасширеннаяПодсказка" id="55"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.ЕстьФото</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.ВыдачаТМЦ</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Дата</dcsset:left>
+							<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+								<v8:date>0001-01-01T00:00:00</v8:date>
+							</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Дата</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+								<v8:date>2021-11-18T00:00:00</v8:date>
+							</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Ссылка</dcsset:left>
+							<dcsset:comparisonType>InList</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:ValueListType">
+								<v8:valueType/>
+								<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+							</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ДатаСписка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата списка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоискНоменклатура" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура для поиска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Список</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.ЕстьФото</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:LightSalmon</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ВесьПериод" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Весь период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Весь период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВесьПериод</Action>
+		</Command>
+		<Command name="ДатаНазад" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата назад</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата назад</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДатаНазад</Action>
+		</Command>
+		<Command name="ДатаВперед" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата вперед</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата вперед</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДатаВперед</Action>
+		</Command>
+		<Command name="ЗакрытьДень" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть день</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть день</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗакрытьДень</Action>
+		</Command>
+		<Command name="СканироватьДокумент" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сканировать документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сканировать документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СканироватьДокумент</Action>
+		</Command>
+		<Command name="Выгрузить" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выгрузить</Action>
+		</Command>
+		<Command name="НайтиНоменклатуру" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти номенклатуру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти номенклатуру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НайтиНоменклатуру</Action>
+		</Command>
+	</Commands>
+</Form>

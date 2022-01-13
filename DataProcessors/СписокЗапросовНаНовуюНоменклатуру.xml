@@ -30,6 +30,7 @@
 		<ChildObjects>
 			<Form>Форма</Form>
 			<Form>ФормаСпискаЗапросовУпр</Form>
+			<Form>ФормаПлз</Form>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>
